@@ -1,1 +1,130 @@
-<p>吾问无为谓</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青春不常在，抓紧谈恋爱！</title>
+</head>
+<body>
+    <!-- 我的作业 -->
+     <h3>彭怡茵23215220120</h3>
+    <!-- 大标题 -->
+    <h4><strong>青春不常在，抓紧谈恋爱！<strong></h4>
+     <!-- 性别选择单选框 -->
+    性别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="sex" id="nan">
+    <label for="nan">男</label>
+    <!-- img在性别后添加图片 -->
+    <img src="男.png" alt="图片加载失败" width="15" height="15">
+
+    <input type="radio" name="sex" id="nv"> 
+    <label for="nv">女</label>
+    <img src="女.png" alt="图片加载失败" width="15" height="15"> <br>
+    <!-- 年月日多选择框 -->
+    生日：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select name="" id="">
+        <option value="">--请选择年份--</option>
+        <option value="">1997</option>
+        <option value="">1998</option>
+        <option value="">1999</option>
+        <option value="">2000</option>
+        <option value="">2001</option>
+        <option value="">2002</option>
+        <option value="">2003</option>
+        <option value="">2004</option>
+        <option value="">2005</option>
+        <option value="">2006</option>
+        <option value="">2007</option>
+    </select>
+    <select name="" id="">
+        <option value="">--请选择月份--</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+        <option value="">7</option>
+        <option value="">8</option>
+        <option value="">9</option>
+        <option value="">10</option>
+        <option value="">11</option>
+        <option value="">12</option>
+    </select>
+    <select name="" id="daySelector">
+        <option value="">--请选择日--</option>
+    </select>
+    <script>
+        // 获取select的id，document 是 JavaScript 中表示整个 HTML 文档的对象，
+        // getElementById 是它的一个方法，用于根据 id 查找元素，获取后赋值给daySelector
+        const daySelector = document.getElementById('daySelector');
+    
+        // 循环创建1到31日的选项并添加到select中
+        for (let i = 1; i <= 31; i++) {
+          //在每次循环中，这行代码使用 document.createElement 方法创建一个新的 <option> 元素
+          const option = document.createElement('option');
+          //将当前循环的i值赋给value
+          option.value = i;
+          //textContent表示select下拉列表中的显示文本
+          option.textContent = i;
+          //这行代码将新创建并设置好属性的 <option> 元素添加到之前获取的 select 元素（daySelector）中
+          // appendChild 是 Element 接口的一个方法，用于将一个节点添加到指定元素的子节点列表的末尾
+          daySelector.appendChild(option);
+        }
+      </script> <br>
+      <!-- input-text文本框填写所在地区 -->
+      所在地区：
+      <input type="text"> <br>
+      <!--input-radio单选结婚情况-->
+      婚姻情况：
+      <label for="wh">未婚</label>
+      <input type="radio" id="wh">
+      <label for="yh">已婚</label>
+      <input type="radio" id="yh">
+      <label for="lh">离婚</label>
+      <input type="radio" id="lh">
+      <br>
+      <!-- input-text文本框填写学历 -->
+      学历：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text"> <br>
+      <!--input-checkbox多选框选择喜欢的类型-->
+      喜欢的类型：
+      <label for="wmd">妩媚的</label>
+      <input type="checkbox" id="wmd">
+      <label for="kad">可爱的</label>
+      <input type="checkbox" id="kad">
+      <label for="xxr">小鲜肉</label>
+      <input type="checkbox" id="xxr">
+      <label for="llr">老腊肉</label>
+      <input type="checkbox" id="llr">
+      <label for="dxh">都喜欢</label>
+      <input type="checkbox" id="dxh">
+      <br>
+      <!-- input-textarea留言板 -->
+      个人简介：
+      <textarea name="" id=""></textarea> <br>
+
+      <!-- input-button按钮 -->
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="button" value="免费注册"> <br>
+      <!-- input-checkbox多选框 -->
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="tk">我同意注册条款和会员加入标准</label>
+      <input type="checkbox" id="tk"> <br>
+      <!-- 超链接标签，这里是一个空连接 -->
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="">我是会员，立即登录</a>
+      <h5>我承诺</h5>
+      <h5>
+      <!-- 无序列表标签 -->
+      <ul>
+        <li>年满18岁,单身</li>
+        <li>抱着严肃的态度</li>
+        <li>真诚寻找另一半</li>
+      </ul>
+      </h5>
+</body>
+</html>
